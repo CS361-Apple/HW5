@@ -8,6 +8,14 @@ class LoginController extends AppController {
      */
     public function actionIndex() {
         $data = new LoginClass();
+        $data->dbConnect();
+
+		$test = $data->getData();
+		foreach($test as $key => $value) {
+			foreach($value as $key2 => $value2) {
+				error_log($key2 . ": " . $value2);
+			}
+		}
 
         $this->setLayoutVar('pageTitle', 'Kogu - Login');
         $this->setLayout('basicPage');

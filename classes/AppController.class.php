@@ -8,7 +8,6 @@ class AppController extends Lvc_PageController
 	{
 		$this->setLayoutVar('pageTitle', 'Untitled');
         $this->requireCss('bootstrap.css');
-        $this->requireCss('whhg.css');
         $this->requireJs('bootstrap.min.js');
 //        $this->requireJs('bootstrap.min.js', 'jquery-1.11.3.min.js');
         $this->requireJsInHead('jquery-1.11.3.min.js');

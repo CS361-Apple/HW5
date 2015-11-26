@@ -8,10 +8,10 @@ define('WWW_JS_PATH', WWW_BASE_PATH . 'js/');
 define('WWW_IMAGE_PATH', WWW_BASE_PATH . 'images/');
 // set_include_path(get_include_path() . PATH_SEPARATOR . APP_PATH . PATH_SEPARATOR . SHARED_PATH);
 // set_include_path(get_include_path() . PATH_SEPARATOR . APP_PATH);
-define('APP_DB_HOSTNAME', 'localhost');
-define('APP_DB_DATABASE', 'durty_base');
-define('APP_DB_USERNAME', 'newuser');
-define('APP_DB_PASSWORD', 'password');
+define('APP_DB_HOSTNAME', getenv('DB_HOST'));
+define('APP_DB_DATABASE', getenv('DB_DATABASE'));
+define('APP_DB_USERNAME', getenv('DB_USERNAME'));
+define('APP_DB_PASSWORD', getenv('DB_PASSWORD'));
 
 // Include and configure the LighVC framework (http://lightvc.org/)
 include_once(APP_PATH . 'modules/lightvc/lightvc.php');

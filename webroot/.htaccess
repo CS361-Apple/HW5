@@ -4,4 +4,6 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_METHOD} !OPTIONS
     RewriteRule ^(.*)$ index.php [L]
+
+	SetEnv DATABASE variable_value
 </IfModule>
